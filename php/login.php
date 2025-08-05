@@ -29,9 +29,9 @@ if ($stmt->num_rows === 1) {
         try {
             $redis = new RedisClient([
                 'scheme' => 'tcp',
-                'host'   => 'redis-17845.c261.us-east-1-4.ec2.redns.redis-cloud.com',
+                'host'   => 'redis-token',
                 'port'   => 17845,
-                'password' => 'sQSp8ptFjvGwolUqwtKQxu9AXPrpjEoU'
+                'password' => 'pw'
             ]);
 
             // test connection
@@ -57,3 +57,4 @@ if ($stmt->num_rows === 1) {
 
 $stmt->close();
 $conn->close();
+
