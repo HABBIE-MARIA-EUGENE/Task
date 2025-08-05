@@ -15,7 +15,7 @@ if (empty($email)) {
 }
 
 try {
-    $client = new Client("mongodb+srv://meugenem1409:fSEUdgzWUC7b3XwA@cluster0.b1rtq6b.mongodb.net/?retryWrites=true&w=majority");
+    $client = new Client("mongodb+srv://us:pw@cluster0.b1rtq6b.mongodb.net/?retryWrites=true&w=majority");
     $collection = $client->myapp->profiles;
 
     // Upsert = update if exists, else insert
@@ -35,3 +35,4 @@ try {
     echo json_encode(['status' => 'error', 'message' => 'MongoDB error: ' . $e->getMessage()]);
 }
 ?>
+
